@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #stTable,
+        #stTable tr,
+        #stTable td,
+        #stTable th {
+            border: 1px dashed black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <caption><em>A test table width merge cells</em></caption>
+    <table border="1">
+        <thead>
+            <tr>
+                <td rowspan="2"></td>
+                <th colspan="2">Average</th>
+                <th rowspan="2">Red</th>
+            </tr>
+            <tr>
+                <th>height</th>
+                <th>weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Males</th>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <th>Females</th>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <table id="stTable" border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">A</th>
+                <th>B</th>
+                <th rowspan="3">D</th>
+                <th colspan="2">E</th>
+                <th>F</th>
+            </tr>
+            <tr>
+                <th>C</th>
+                <th rowspan="2">G</th>
+                <th rowspan="2">H</th>
+                <th rowspan="2">I</th>
+            </tr>
+            <tr>
+                <th>J</th>
+            </tr>
+            <tr>
+                <th colspan="3">K</th>
+                <th>L</th>
+                <th colspan="2">M</th>
+            </tr>
+        </thead>
+    </table>
+    <br/>
+    <p>HTML Tag</p>
+    <ul>
+        <li>table</li>
+        <li>tr</li>
+        <li>td</li>
+        <li>th</li>
+    </ul>
+    <p>Attribute</p>
+    <ul>
+        <li>rowspan</li>
+        <li>colspan</li>
+        <li>border</li>
+    </ul>
+    <br/>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="3">Product</th>
+            </tr>
+            <tr>
+                <th>NO</th>
+                <th>P.Name</th>
+                <th>P.Count</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pen</td>
+                <td rowspan="3">50</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Book</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Dust</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+
+</html>
